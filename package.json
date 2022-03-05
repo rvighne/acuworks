@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "test": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
