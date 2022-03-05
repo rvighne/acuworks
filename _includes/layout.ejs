@@ -1,62 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<title>AcuWorks Therapeutics - <%= title %></title>
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<link href='http://fonts.googleapis.com/css?family=Buda:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="/styles/style.css" />
-</head>
-<body>
-<header>
-<a href="/" title="Home"><img src="/images/logo.png" id="logo" /></a>
-<nav>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/about">About</a></li>
-<li><a href="/testimonials">Testimonials</a></li>
-<li><a href="/acupuncture">Acupuncture</a></li>
-<li><a href="/ayurveda">Ayurveda</a></li>
-<li><a href="/articles">Media</a></li>
-<li><a href="/resources">Resources</a></li>
-<li><a href="/contact">Contact</a></li>
-</ul>
+<html lang=en>
+	<title>AcuWorks Therapeutics - <%= title %></title>
+	<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Buda:300">
+	<link rel=stylesheet href=/styles/style.css>
 
-<select onchange="window.location = this.options[this.selectedIndex].value;" >
-<option value="/">Home</option>
-<option value="/about">About</option>
-<option value="/testimonials">Testimonials</option>
-<option value="/acupuncture">Acupuncture</option>
-<option value="/ayurveda">Ayurveda</option>
-<option value="/articles">Media</option>
-<option value="/resources">Resources</option>
-<option value="/contact">Contact</option>
-</select>
-</nav>
-</header>
-<br clear="all" />
-<br clear="all" />
-<br clear="all" />
-<br clear="all" />
-<br clear="all" />
-<br clear="all" />
-<section id="content">
-<%- content %>
-</section>
-<br clear="all" />
-<br clear="all" />
-<br clear="all" />
-<br clear="all" />
-<br clear="all" />
-<footer>
-858.381.0ACU (858.381.0228) <a href="mailto:svighne@acuworks-ca.com">svighne@acuworks-ca.com</a>
-<table id="addresses">
-<tr>
-<td align="center" style="border-right: thin solid lightgray;"><address onclick="window.open('https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=2045+San+Elijo+Ave,+Cardiff,+CA&aq=0&oq=2045&sll=37.269174,-119.306607&sspn=10.920926,21.643066&t=m&ie=UTF8&hq=&hnear=2045+San+Elijo+Ave,+Cardiff,+California+92007&ll=33.022554,-117.282658&spn=0.034543,0.054932&z=14&iwloc=A&output=embed', 'map', 'width=640,height=480')">2045 San Elijo Avenue<br />Cardiff Town Center (upstairs)<br />Cardiff-by-the-Sea, CA 92007</address></td>
-</tr>
-</table>
-</footer>
-</body>
+	<header>
+		<a href=/ title=Home><img id=logo src=/images/logo.png alt="AcuWorks Therapeutics"></a>
+		<nav>
+			<ul>
+				<li><a href=/>Home</a>
+				<li><a href=/about>About</a>
+				<li><a href=/testimonials>Testimonials</a>
+				<li><a href=/acupuncture>Acupuncture</a>
+				<li><a href=/ayurveda>Ayurveda</a>
+				<li><a href=/articles>Media</a>
+				<li><a href=/resources>Resources</a>
+				<li><a href=/contact>Contact</a>
+			</ul>
+
+			<select onchange="window.location = this.options[this.selectedIndex].value;">
+				<option value=/>Home
+				<option value=/about>About
+				<option value=/testimonials>Testimonials
+				<option value=/acupuncture>Acupuncture
+				<option value=/ayurveda>Ayurveda
+				<option value=/articles>Media
+				<option value=/resources>Resources
+				<option value=/contact>Contact
+			</select>
+		</nav>
+	</header>
+
+	<br clear=all>
+	<br clear=all>
+	<br clear=all>
+	<br clear=all>
+	<br clear=all>
+	<br clear=all>
+
+	<section id=content>
+		<%- content %>
+	</section>
+
+	<br clear=all>
+	<br clear=all>
+	<br clear=all>
+	<br clear=all>
+	<br clear=all>
+
+	<footer>
+		858.381.0ACU (858.381.0228) <a href=mailto:svighne@acuworks-ca.com>svighne@acuworks-ca.com</a>
+		<table>
+			<tr>
+				<td align=center style="border-right: thin solid lightgray;"><address onclick="window.open('https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=2045+San+Elijo+Ave,+Cardiff,+CA&aq=0&oq=2045&sll=37.269174,-119.306607&sspn=10.920926,21.643066&t=m&ie=UTF8&hq=&hnear=2045+San+Elijo+Ave,+Cardiff,+California+92007&ll=33.022554,-117.282658&spn=0.034543,0.054932&z=14&iwloc=A&output=embed', 'map', 'width=640,height=480')">2045 San Elijo Avenue<br>Cardiff Town Center (upstairs)<br>Cardiff-by-the-Sea, CA 92007</address></td>
+			</tr>
+		</table>
+	</footer>
 </html>
