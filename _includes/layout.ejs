@@ -1,29 +1,17 @@
-<?
-$conn = mysql_connect("localhost", "ayuyog5_saritav", "------------") or die("ERROR! Could not connect to database!");
-mysql_select_db("ayuyog5_acuworks", $conn) or die("ERROR! Could not select database!");
-$page = $_REQUEST['page'];
-$pages = mysql_query("SELECT * FROM pages WHERE page=$page") or die("ERROR! No such page!");
-$data = mysql_fetch_array($pages);
-$title =   $data['title'];
-$content = $data['content'];
-//require "statistics.php";
-mysql_close($conn);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>AcuWorks Therapeutics - <?php echo $title ?></title>
+<title>AcuWorks Therapeutics - <%= title %></title>
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link href='http://fonts.googleapis.com/css?family=Buda:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="styles/style.css" />
+<link rel="stylesheet" href="/styles/style.css" />
 </head>
 <body>
 <header>
-<a href="index.php" title="Home"><img src="images/logo.png" id="logo" /></a>
+<a href="index.php" title="Home"><img src="/images/logo.png" id="logo" /></a>
 <nav>
 <ul>
 <li><a href="index.php">Home</a></li>
@@ -55,8 +43,7 @@ mysql_close($conn);
 <br clear="all" />
 <br clear="all" />
 <section id="content">
-<?php /*if (isset($_GET['status'])) { echo "<section id='status'>" . $_GET['status'] . "</section>"; }*/ ?>
-<?php echo $content; ?>
+<%- content %>
 </section>
 <br clear="all" />
 <br clear="all" />
