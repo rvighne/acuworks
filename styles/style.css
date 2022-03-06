@@ -108,16 +108,17 @@ a:active {
 	clear: both;
 }
 
-#faq-container {
-	text-align: center;
-}
-
-#faq {
+.faq-title {
 	width: 250px;
+	display: block;
+	margin: 0 auto;
 }
 
-#faq_nav li {
-	display:         block;
+.faq-nav {
+	list-style: none;
+}
+
+.faq-nav a {
 	text-decoration: underline;
 }
 
