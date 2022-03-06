@@ -1,34 +1,25 @@
 body {
 	color:       black;
 	background:  white;
-	overflow-x:  hide;
 }
 
 ::selection {
 	background:  #CAF2A7;
 }
 
-::-moz-selection {
-	background:  #CAF2A7;
-}
-
 @font-face {
 	font-family: "Century Gothic";
-	font-style:  normal;
-	font-weight: normal;
 	src:         url("../fonts/Century_Gothic.ttf");
 }
 
 h5 {
 	font-size:   15pt;
 	font-family: "Buda";
-	font-weight: bold;
 }
 
 h4 {
 	font-size:   16pt;
 	font-family: "Century Gothic";
-	font-weight: bold;
 }
 
 h3 {
@@ -44,25 +35,14 @@ header {
 	left:                       0;
 	right:                      0;
 	padding:                    1em 2em 0 2em;
-/*
-	left:                       1%;
-	right:                      1%;
-	box-shadow:                 0px 0px 15px #CAE9A6;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius:  5px;
-*/
 	background:                 white;
 	font-family:                "Century Gothic";
 	font-size:                  12pt;
-/*
-	margin:                     auto;
-*/
 	border-bottom:              thin solid #CAE9A6;
 }
 
 #logo {
 	width: 300px;
-	border: none;
 }
 
 nav select {
@@ -117,16 +97,7 @@ a:active {
 	border-radius: 5px;
 }
 
-#status {
-	background:         #CAE9A6;
-	box-shadow:         0px 0px 5px #CAE9A6;
-	border-radius:      5px;
-}
-
 #content {
-	border:             thin solid #CAE9A6;
-	box-shadow:         0px 0px 10px #CAE9A6;
-	border-radius:      15px;
 	padding:            10px;
 	width:              95%;
 	font-family:        "Buda";
@@ -161,18 +132,10 @@ table {
 	width: 100%;
 }
 
-th {
-	text-align: left;
-}
-
 td {
 	padding:    10px;
 	margin:     10px;
 	width:      33%;
-}
-
-td ul {
-	text-align: left;
 }
 
 #content aside {
@@ -229,17 +192,6 @@ td ul {
 	content: "...less";
 }
 
-footer {
-/*
-	position:    fixed;
-*/
-/*
-	top:         0px;
-	left:        1%;
-	right:       1%;
-*/
-}
-
 dt {
 	font-weight: bold;
 }
@@ -248,58 +200,7 @@ dd {
 	margin-bottom: 15px;
 }
 
-input, textarea {
-	border-radius:      5px;
-	background:         transparent;
-	font-family:        "Century Gothic";
-	font-size:          12pt;
-	box-shadow:         0px 0px 15px #CAE9A6;
-	border:             thin solid #CAE9A6;
-}
-
-input[type="text"] {
-	width:   130px;
-	padding: 10px;
-	margin:  10px;
-}
-
-input[type="email"] {
-	width:   300px;
-	padding: 10px;
-	margin:  10px;
-}
-
-textarea {
-	width:   300px;
-	height:  80px;
-	padding: 10px;
-	margin:  10px;
-}
-
-input[type="submit"] {
-	border:     none;
-	padding:    3px;
-	width:      60px;
-}
-
-input[type="submit"]:hover {
-	background:         #CAE9A6;
-	box-shadow:         0px 0px 15px #CAE9A6;
-}
-
 footer {
-/*
-	border:                  thin solid #CAE9A6;
-
-	position:                fixed;
-	bottom:                  0px;
-
-	box-shadow:              0px 0px 15px #CAE9A6;
-	border-top-right-radius: 5px;
-	border-top-left-radius:  5px;
-	width:                   98%;
-	background:              white;
-*/
 	font-family:             "Century Gothic";
 	font-size:               12pt;
 	text-align:              center;
@@ -307,34 +208,6 @@ footer {
 
 footer address {
 	font-size:       10pt;
-	cursor:          pointer;
-	color:           darkgreen;
-	text-decoration: underline;
-}
-
-#map {
-	position:           fixed;
-	border:             thick dashed;
-	top:                50%;
-	left:               50%;
-	visibility:         hidden;
-	width:              640px;
-	height:             480px;
-	margin-top:         -240px;
-	margin-left:        -320px;
-	box-shadow:         0px 0px 15px black;
-}
-
-#mapclose {
-	position: absolute;
-	top:     -15px;
-	left:    -15px;
-}
-
-#testclose {
-	position: absolute;
-	top:     -15px;
-	left:    -15px;
 }
 
 @media screen and (max-width: 875px) {
