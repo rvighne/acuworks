@@ -96,11 +96,10 @@ a:active {
 }
 
 #content {
-	padding:            10px;
-	width:              95%;
+	max-width: 960px;
 	font-family:        "Buda";
 	font-size:          12pt;
-	margin:             auto;
+	margin:             8em auto 3em auto;
 }
 
 #content:after {
@@ -139,7 +138,7 @@ td {
 #content aside {
 	border:             thin solid #CAE9A6;
 	box-shadow:         0px 0px 10px #CAE9A6;
-	border-radius:      15px;
+	border-radius:      0.5em;
 	padding:            10px;
 	float:              right;
 	width:              300px;
