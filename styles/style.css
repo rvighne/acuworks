@@ -34,32 +34,40 @@ header {
 	top:                        0;
 	left:                       0;
 	right:                      0;
-	padding:                    1em 2em 0 2em;
+	padding:                    0 2em;
 	background:                 white;
 	font-family:                "Century Gothic";
 	font-size:                  12pt;
 	border-bottom:              thin solid #CAE9A6;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-#logo {
-	width: 300px;
+nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 nav ul {
-	position: absolute;
-	top:      10px;
-	right:    10px;
-	float:    right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-wrap: wrap;
 }
 
-nav li {
-	display: inline;
-	height:  100%;
+.logo img {
+	height: 4.5em;
+	margin-top: 1em;
 }
 
 nav a {
-	padding: 5px;
-	height:  100%;
+	padding: 0.5em;
+	margin: 0 0.2em;
 	transition: background-color 200ms;
 }
 
@@ -83,8 +91,8 @@ a:active, a:hover {
 }
 
 a:active {
-	border:        thin solid #CAE9A6;
-	border-radius: 5px;
+	outline:        thin solid #CAE9A6;
+	border-radius: 4px;
 }
 
 #content {
